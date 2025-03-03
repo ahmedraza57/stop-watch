@@ -7,19 +7,44 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Stop Watch</h1>
-    <section id="stop-watch-spans">
-        <span id="minutes">0</span>
-        :
-        <span id="seconds">0</span>
-        :
-        <span id="mili-seconds">0</span>
-    </section>
-    <section>
-        <button id="start-button">start</button>
-        <button id="stop-button">stop</button>
-        <button id="reset-button">reset</button>
-    </section>
+    <header>
+        <h1>Stop watch</h1>
+        <nav>
+            <button id="stop-watch">StopWatch</button>
+            <button id="set-timer">Timer</button>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <input type="number" id="hours-input" placeholder="Hr" >
+            <input type="number" id="minutes-input" placeholder="Min" >
+            <input type="number" id="seconds-input" placeholder="Sec" >
+            <input type="number" id="mili-seconds-input" placeholder="M-Sec" >
+        </section>
+        <section aria-label="Timer" class="timer-display">
+            <output class="time-segment">
+                <span id="hours">00</span>
+                <span class="label">Hours</span>
+              </output>
+              <output class="time-segment">
+                <span id="minutes">00</span>
+                <span class="label">Minutes</span>
+              </output>
+              <output class="time-segment">
+                <span id="seconds">00</span>
+                <span class="label">Seconds</span>
+              </output>
+              <output class="time-segment">
+                <span id="mili-seconds">00</span>
+                <span class="label">Milliseconds</span>
+              </output>
+        </section>
+        <section class="operational-button">
+            <button id="start-button">start</button>
+            <button id="stop-button">stop</button>
+            <button id="reset-button">reset</button>
+        </section>
+    </main>
 </body>
 <script src="script.js"></script>
-</html> 
+</html>
